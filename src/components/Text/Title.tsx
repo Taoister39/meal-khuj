@@ -1,17 +1,17 @@
 import clsx from "clsx";
-import { FunctionComponent, ReactElement } from "react";
+import { FunctionComponent } from "react";
 import styles from "./Title.module.scss";
 
 interface TitleProps {
-  children: ReactElement;
+  children: string;
   className: string;
-  variant: "secondary" | "primary";
+  variant?: "secondary" | "primary";
 }
 
 const Title: FunctionComponent<TitleProps> = ({
   children,
   className,
-  variant,
+  variant = "primary",
 }) => {
   return (
     <h2 className={clsx(styles.title, className, styles[`title__${variant}`])}>

@@ -1,10 +1,10 @@
-import { FunctionComponent, ReactElement } from "react";
+import { FunctionComponent, ReactElement, ReactNode } from "react";
 import clsx from "clsx";
 import styles from "./Text.module.scss";
 
 interface TextProps {
-  children: ReactElement | string;
-  className: string ;
+  children: ReactNode;
+  className?: string;
 }
 
 const Text: FunctionComponent<TextProps> = ({ children, className }) => {
