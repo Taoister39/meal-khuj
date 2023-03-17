@@ -1,0 +1,21 @@
+.navBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  max-width: 150px;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1.5rem;
+
+  li,
+  a {
+    display: inline-block;
+    font-size: 1.8rem;
+  }
+}
