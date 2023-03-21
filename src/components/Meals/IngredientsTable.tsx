@@ -18,19 +18,22 @@ const IngredientsTable: FunctionComponent<IngredientsTable> = ({
       <Title className={styles.title}>Ingredients</Title>
       <table className={styles["ingredients-table"]}>
         <tbody>
-          {ingredientsWithMeasures.map(
-            (ingredients) =>
-              ingredients.ingredient !== "" && (
-                <tr key={ingredients.index}>
-                  <td>
-                    <Text>{ingredients.ingredient}</Text>
-                  </td>
-                  <td>
-                    <Text>{ingredients.measure}</Text>
-                  </td>
-                </tr>
-              )
-          )}
+          {ingredientsWithMeasures
+            .filter(
+              (item) =>
+                item.ingredient?.trim()?.length > 0 &&
+                item.measure?.trim()?.length > 0
+            )
+            .map((ingredients) => (
+              <tr key={ingredients.index}>
+                <td>
+                  <Text>{ingredients.ingredient}</Text>
+                </td>
+                <td>
+                  <Text>{ingredients.measure}</Text>
+                </td>
+              </tr>
+            ))}
         </tbody>
       </table>
     </>
