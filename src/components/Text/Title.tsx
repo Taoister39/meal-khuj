@@ -1,10 +1,10 @@
 import clsx from "clsx";
-import { FunctionComponent } from "react";
+import { FunctionComponent, ReactNode } from "react";
 import styles from "./Title.module.scss";
 
 interface TitleProps {
-  children: string;
-  className: string;
+  children: ReactNode;
+  className?: string;
   variant?: "secondary" | "primary";
 }
 

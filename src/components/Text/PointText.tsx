@@ -1,11 +1,11 @@
-import { FunctionComponent, ReactElement } from "react";
+import { FunctionComponent, ReactNode } from "react";
 import styles from "./PointText.module.scss";
 import clsx from "clsx";
 import Text from "@/components/Text/Text";
 
 interface PointTextProps {
-  children: ReactElement;
-  className: string;
+  children: ReactNode;
+  className?: string;
 }
 
 const PointText: FunctionComponent<PointTextProps> = ({

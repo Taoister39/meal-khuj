@@ -1,0 +1,27 @@
+.page-wrapper {
+  padding: 10rem 0;
+  .top-container {
+    display: flex;
+    gap: 5rem;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .save-button {
+      margin-top: 2rem;
+
+      svg {
+        margin-bottom: -2.5px;
+      }
+    }
+  }
+
+  .ingredients-table,
+  .instructions {
+    margin-top: 10rem;
+  }
+}
+
+.green-text {
+  margin-top: 2rem;
+  color: #00b300;
+}

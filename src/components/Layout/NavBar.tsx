@@ -16,7 +16,7 @@ const NavBar: FunctionComponent = () => {
           <Link href="/meals">Meals</Link>
         </li>
         <li>
-          <Link href="/saveMeals">saveMeals</Link>
+          <Link href="/savedMeals">Saved List</Link>
         </li>
       </ul>
     </nav>
